@@ -1,0 +1,18 @@
+.example-4 {
+    margin-top: 40px;
+}
+.example-4 .text-content {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.example-4 .button-one,.button-two {
+    margin-top: 20px;
+}
+.example-4 .button-sp-area {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 60%;
+}

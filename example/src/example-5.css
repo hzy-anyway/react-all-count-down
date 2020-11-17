@@ -1,0 +1,17 @@
+.example-5 {
+    margin-top: 40px;
+}
+.example-5 .no-1 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.example-5 .no-2,.no-3,.no-4 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.example-5 .no-2,.no-3,.no-4 span {
+    padding-top: 20px;
+}
