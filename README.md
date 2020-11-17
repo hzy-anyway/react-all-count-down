@@ -36,6 +36,7 @@ The tag \<AllCountDown\> which represent the component is an inline tag. It disp
 | countDownStyle | Object | No | {} | The css style of the numeric symbols to be displayed |
 | timesUpHandler | Function | No | undefined | The callback when time's up. |
 | startAfterMount | Boolean | No | true | Start countdowning after the component is mounted. |
+
 Notice:<br>
 * We strongly recommend you to name timers differently in a project,or some errors may happen.
 * When it comes with props 'seconds','minutes','hours','days','tenths','hundredths' 'miliseconds' at the same time,the props will add up to a total time.
@@ -66,6 +67,7 @@ Available value of prop 'part':
 | tenth | Display part 'tenth of a second' of a timer |
 | hundredth | Display part 'hundredth of a second' of a timer |
 | milisecond | Display part 'milisecond' of a timer |
+
 Notice:<br>
 * The prop 'name' is used to identify a timer.When there're several \<AllCountDown\> components with a same value on prop 'name',the props 'seconds' or 'minutes'(or 'hours'...) they have will add up to a total time as a start time of the countdown.
 * When there're several \<AllCountDown\> components with a same value on prop 'name',the 'timesUpHandlers' they have will all be called in an unknown sequence when time's up in a countdown.
@@ -83,6 +85,7 @@ The code above functions as displaying an '1 minute and 5 seconds' countdown.Whe
 | prop | type | required | default | detail |
 | ---- | ---- | ---- | ---- | ---- |
 | zeroHandler | Function | No | undefined | Callback when relevant 'part' of time come to zero  |
+
 Notice:
 * When relevant 'part' of time is '0' initially,the zeroHandler of this 'part' will not be triggered at this time.
 * Just like the 'timesUpHandler',when there're duplicate zeroHandlers,they will be triggered in an unknown sequence.
@@ -102,6 +105,7 @@ The code above functions as displaying an '1 minute and 5 seconds' countdown.Eac
 | prop | type | required | default | detail |
 | ---- | ---- | ---- | ---- | ---- |
 | valueRender | Object | No | undefined | Render a component from you instead of numeric symbols.The target component should have a prop named 'value'. |
+
 Notice:The target component should have a prop named 'value' which will be updated with the latest value of the 'part of the time'.For more detail,turn to the [example project](https://github.com/hzy-anyway/react-all-count-down) in Github.
 
 ### Example 5:
